@@ -1,0 +1,145 @@
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navigation bar */
+#navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation bar: Logo And Image */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 59px;
+  margin: 3px 6px;
+  border-radius: 50px;
+}
+
+#navbar {
+  position: relative;
+  font-family: "Noto Sans Syloti Nagri", sans-serif;
+}
+
+/* navigation bar :list styling */
+#navbar ul {
+  display: flex;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#navbar ul li {
+  /* color: white; */
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+  color: white;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-family: "Noto Sans Syloti Nagri", sans-serif;
+}
+#home::before {
+  content: "";
+  z-index: -1;
+  opacity: 0.89;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url(abhay44.jfif.jpg) no-repeat center center/cover;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+}
+#home p {
+  color: white;
+  text-align: center;
+  padding: 24px 21px;
+  font-size: 1.5rem;
+  font-family: "Noto Sans Syloti Nagri", sans-serif;
+}
+/* Services Section */
+.h-secondary-container {
+  font-size: 2.3rem;
+  padding: 12px;
+}
+
+#services-container {
+  margin: 35px;
+  text-align: center;
+  display: flex;
+}
+#services-container.box {
+}
+#services.box img {
+  /* height: 900px; */
+}
+
+/* Manish Test */
+.test {
+  width: 250px;
+  height: 250px;
+  /* border: 2px solid red; */
+}
+.testing {
+  border: 2px solid black;
+  width: 100%;
+  margin-top: 455px;
+}
+
+/* Manish end*/
+
+/* Utility class */
+.h-primary {
+  font-size: 2.3rem;
+  padding: 12px;
+}
+
+.btn {
+  padding: 6px 5px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: darkgrey;
+}
+.center {
+  text-align: center;
+}
